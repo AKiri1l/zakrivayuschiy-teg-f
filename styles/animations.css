@@ -12,6 +12,56 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+.sparks {
+  opacity: 0;
+}
+
+.card__icon-button .core {
+  fill: transparent;
+  transition: fill 0.3s 0.05s;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--like-core);
+  transition: fill 0.3s;
+}
+
+.card__icon-button .main-body {
+  fill: transparent;
+  transition: fill 0.3s;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--like-main-body);
+  transition: fill 0.3s 0.05s;
+}
+
+.card__icon-button:active .core {
+  fill: #FF0000;
+  transition: fill 0.3s;
+}
+
+
+.card__icon-button:active .main-body {
+  fill: #FF0000;
+  transition: fill 0.3s 0.05s;
+}
+
+.like-icon.is-liked .core {
+  fill: #FF0000;
+  transition: fill 0.3s;
+}
+
+.like-icon.is-liked .main-body {
+  fill: #FF0000;
+  transition: fill 0.3s 0.05s;
+}
+
+.like-icon.is-liked .contour {
+  fill: #FF0000;
+  transition: fill 0.3s 0.06s;
+}
+
 @keyframes move {
     0% {
       left: -14px;
