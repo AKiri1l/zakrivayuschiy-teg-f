@@ -62,6 +62,20 @@
   transition: fill 0.3s 0.06s;
 }
 
+.like-icon.is-liked .heart {
+  animation: mash 0.3s ease-in 0.1s alternate;
+  transform-origin: center center;
+}
+
+.like-icon.is-liked .sparks {
+  animation: blinking 0.3s ease-in 0.3s 1 alternate;
+}
+
+.like-icon .contour {
+  fill: var(--like-contor);
+  transition: fill 0.1s;
+}
+
 @keyframes move {
     0% {
       left: -14px;

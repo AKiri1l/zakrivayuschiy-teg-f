@@ -50,6 +50,10 @@
   outline: none;
 }
 
+.header__title:focus-visible {
+  outline: none;
+}
+
 .header__subtitle {
   text-transform: uppercase;
   font-size: var(--header-subtitle-size);
@@ -126,6 +130,7 @@
 }
 
 .content-title {
+  font-size: 18px;
   margin-block: 3px;
   margin-inline: 10px;
   letter-spacing: -0.02em;
@@ -235,13 +240,13 @@
   margin: auto;
 }
 
-.card__like-button:focus {
+.card__like-button:focus-visible {
   outline: none;
   box-shadow: 2px 2px var(--accent-color);
   transition: box-shadow 0.3s;
 }
 
-.card__like-button:focus-visible {
+.card__like-button:focus {
   outline: none;
 }
 
@@ -279,20 +284,6 @@
   outline-width: 2px;
   outline-color: var(--accent-color);
   transition: outline-color 0.3s ease;
-}
-
-.like-icon.is-liked .heart {
-  animation: mash 0.3s ease-in 0.1s alternate;
-  transform-origin: center center;
-}
-
-.like-icon.is-liked .sparks {
-  animation: blinking 0.3s ease-in 0.3s 1 alternate;
-}
-
-.like-icon .contour {
-  fill: var(--like-contor);
-  transition: fill 0.1s;
 }
 
 .submit {
