@@ -191,7 +191,7 @@
   filter: opacity(0.5);
 }
 
-@supports((text-stroke: 1px var(--stroke-color)) or (-webkit-text-stroke: 1px var(--stroke-color))) {
+@supports((-webkit-text-stroke: 1px var(--stroke-color))) {
   .image-watermark {
       -webkit-text-stroke: 1px #FFF;
       text-shadow: none;
